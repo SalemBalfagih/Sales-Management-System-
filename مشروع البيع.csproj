@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{976B9572-1143-4DBE-A4DD-B3CB39F0E6ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>مشروع_البيع</RootNamespace>
+    <AssemblyName>مشروع البيع</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classcustmer.cs" />
+    <Compile Include="classitem.cs" />
+    <Compile Include="classorder.cs" />
+    <Compile Include="classprodact.cs" />
+    <Compile Include="classpublic.cs" />
+    <Compile Include="classresoures.cs" />
+    <Compile Include="classuser.cs" />
+    <Compile Include="classconn.cs" />
+    <Compile Include="crprintorder.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crprintorder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DBsellDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBsellDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreport.Designer.cs">
+      <DependentUpon>frmreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbackup.Designer.cs">
+      <DependentUpon>frmbackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuys.Designer.cs">
+      <DependentUpon>frmbuys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcustmuer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcustmuer.Designer.cs">
+      <DependentUpon>frmcustmuer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmitem.Designer.cs">
+      <DependentUpon>frmitem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmorderdatails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmorderdatails.Designer.cs">
+      <DependentUpon>frmorderdatails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmordersales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmordersales.Designer.cs">
+      <DependentUpon>frmordersales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprint.Designer.cs">
+      <DependentUpon>frmprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmresource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmresource.Designer.cs">
+      <DependentUpon>frmresource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsales.Designer.cs">
+      <DependentUpon>frmsales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsearch.Designer.cs">
+      <DependentUpon>frmsearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsetting.Designer.cs">
+      <DependentUpon>frmsetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprodact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprodact.Designer.cs">
+      <DependentUpon>frmprodact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="crprintorder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crprintorder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreport.resx">
+      <DependentUpon>frmreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbackup.resx">
+      <DependentUpon>frmbackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuys.resx">
+      <DependentUpon>frmbuys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcustmuer.resx">
+      <DependentUpon>frmcustmuer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmitem.resx">
+      <DependentUpon>frmitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmorderdatails.resx">
+      <DependentUpon>frmorderdatails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmordersales.resx">
+      <DependentUpon>frmordersales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprint.resx">
+      <DependentUpon>frmprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprodact.resx">
+      <DependentUpon>frmprodact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmresource.resx">
+      <DependentUpon>frmresource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsales.resx">
+      <DependentUpon>frmsales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsearch.resx">
+      <DependentUpon>frmsearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsetting.resx">
+      <DependentUpon>frmsetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DBsellDataSet.xsc">
+      <DependentUpon>DBsellDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBsellDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBsellDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBsellDataSet.xss">
+      <DependentUpon>DBsellDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20220330_182039.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundEraser_٢٠٢٢٠١٢٨_١٠٢٤٤٩٧٢٢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1420853324_Look.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bundle-48x48x32b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-property-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-11-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-11-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-3-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-2-32_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-2-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-2-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat_seo-30-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2816%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lorrygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lorrygreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsoft-word-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microsoft-word-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-in-browser-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-in-browser-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-5-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-6-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales-by-payment-method-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales-by-payment-method-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalesPeriodMonth_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-32_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-6-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-5-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-5-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-cart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop-cart-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turbo32o80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_two_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_two_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webcam-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webcam-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-mark-3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20220330_183202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20220330_183659.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20220330_183815.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20220330_183720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-3221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boproductgroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costanalysis_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pageorientation_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentoddevenpages_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorder_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocontact2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoology_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1657465273785.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
