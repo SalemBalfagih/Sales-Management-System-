@@ -1,9 +1,15 @@
 # Sales-Management-System-
-<img width="960" alt="login" src="https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/a1fe26b8-7ef5-432c-be4d-a0a234a0b1b0">
+
+
 ![1700859188033](https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/4458aa9a-ef90-49b5-91d9-07f210780e6f)
+
 ![1700859188012](https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/0ac62f58-56aa-4161-a1ca-348bcbb9b700)
+
 ![1700859187989](https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/8e50bd75-b805-4735-a986-7ec9f731a816)
+
 ![1700859187967](https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/f020e0ba-0738-4883-bad2-8c63425188e4)
+
+<img width="960" alt="login" src="https://github.com/Salem-balfaqih/Sales-Management-System-/assets/137483972/a1fe26b8-7ef5-432c-be4d-a0a234a0b1b0">
 
 # The program contains:
 
